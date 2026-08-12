@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kuvaka Tech — Starlink Mini Kit, $130</title>
 <meta name="description" content="Kuvaka Tech Pvt Ltd — verified Starlink seller. Genuine Starlink Mini Kits at $130, professional installation from $30. Stay connected, anywhere." />
+<link rel="icon" href="logo.jpg" type="image/jpeg" />
+<link rel="apple-touch-icon" href="logo.jpg" />
 <style>
   /* ---------- tokens ---------- */
   :root{
@@ -120,13 +122,13 @@
   .header-row{ display:flex; align-items:center; justify-content:space-between; gap: 16px; }
   .logo{ display:flex; align-items:center; gap: 12px; }
   .logo-mark{
-    width: 42px; height: 42px; border-radius: 11px;
-    background: linear-gradient(155deg, var(--deep-2), var(--deep-1));
-    display:flex; align-items:center; justify-content:center;
-    color: #fff; font-family: "Arial Black", Arial, sans-serif; font-weight: 900; font-size: 1.05rem;
+    width: 44px; height: 44px; border-radius: 11px;
+    overflow: hidden;
+    background: #050107;
     flex-shrink: 0;
     transition: transform 0.25s cubic-bezier(.2,.8,.2,1);
   }
+  .logo-mark img{ width: 100%; height: 100%; object-fit: cover; display:block; }
   @media (hover:hover){ .logo:hover .logo-mark{ transform: rotate(-8deg) scale(1.06); } }
   .logo-text{ line-height: 1.15; }
   .logo-text strong{ display:block; font-size: 1.05rem; letter-spacing: -0.01em; }
@@ -436,7 +438,7 @@
 <header>
   <div class="wrap header-row">
     <div class="logo">
-      <div class="logo-mark">KT</div>
+      <div class="logo-mark"><img src="logo.jpg" alt="Kuvaka Tech logo" /></div>
       <div class="logo-text">
         <strong>Kuvaka Tech</strong>
         <span>Pvt Ltd</span>

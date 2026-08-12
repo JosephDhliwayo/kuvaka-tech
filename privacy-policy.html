@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Privacy Policy — Kuvaka Tech</title>
 <meta name="description" content="How Kuvaka Tech Pvt Ltd collects, uses and protects your information." />
+<link rel="icon" href="logo.jpg" type="image/jpeg" />
+<link rel="apple-touch-icon" href="logo.jpg" />
 <style>
   :root{
     --ink: #17122A; --ink-soft: #5A4F80; --paper: #FFFFFF; --mist: #F6F3FC; --line: #E3DAF5;
@@ -29,10 +31,9 @@
   .logo{ display:flex; align-items:center; gap: 12px; text-decoration:none; color: inherit; }
   .logo-mark{
     width: 38px; height: 38px; border-radius: 10px;
-    background: linear-gradient(155deg, var(--deep-2), var(--deep-1));
-    display:flex; align-items:center; justify-content:center;
-    color:#fff; font-family:"Arial Black", Arial, sans-serif; font-weight:900; font-size:0.95rem; flex-shrink:0;
+    overflow: hidden; background: #050107; flex-shrink:0;
   }
+  .logo-mark img{ width: 100%; height: 100%; object-fit: cover; display:block; }
   .logo-text strong{ display:block; font-size: 1rem; }
   .logo-text span{ display:block; font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
   .back{ font-size: 0.85rem; color: var(--violet-600); text-decoration: none; font-weight: 600; }
@@ -67,7 +68,7 @@
 <header>
   <div class="wrap header-row">
     <a class="logo" href="index.html">
-      <div class="logo-mark">KT</div>
+      <div class="logo-mark"><img src="logo.jpg" alt="Kuvaka Tech logo" /></div>
       <div class="logo-text"><strong>Kuvaka Tech</strong><span>Pvt Ltd</span></div>
     </a>
     <a class="back" href="index.html">&larr; Back to home</a>
