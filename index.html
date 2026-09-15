@@ -358,6 +358,22 @@
   .work-card h3{ font-size: 0.98rem; font-family: inherit; font-weight: 800; margin: 0; }
   .work-card .url{ margin:0; font-size: 0.8rem; color: var(--ink-soft); word-break: break-all; }
 
+  .case-study{
+    background: var(--paper); border: 1px solid var(--line); border-radius: 24px;
+    padding: clamp(26px, 4vw, 36px); margin-top: 24px;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .case-study-head{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap: 16px; margin-bottom: 6px; }
+  .case-study-head .tag{ font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; color: var(--teal-600); text-transform: uppercase; }
+  .case-study h3{ font-size: 1.3rem; font-family: 'Geist', sans-serif; font-weight: 800; margin: 4px 0 0; }
+  .case-study .visit{ font-size: 0.85rem; font-weight: 700; color: var(--teal-600); text-decoration: none; white-space: nowrap; display:inline-flex; align-items:center; gap: 6px; }
+  @media (hover:hover){ .case-study .visit:hover{ color: var(--teal-700); } }
+  .case-study p.desc{ color: var(--ink-soft); font-size: 0.96rem; line-height: 1.65; max-width: 74ch; margin: 14px 0 22px; }
+  .case-study ul{ list-style:none; margin: 0; padding: 0; display:grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; }
+  .case-study li{ display:flex; gap: 9px; font-size: 0.9rem; color: var(--ink-soft); line-height: 1.4; }
+  .case-study li svg{ flex-shrink: 0; margin-top: 3px; color: var(--teal-600); }
+  @media (max-width: 640px){ .case-study ul{ grid-template-columns: 1fr; } }
+
   /* ---------- what we can build (illustrative examples) ---------- */
   .examples{ display:grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-bottom: clamp(56px,8vw,96px); }
   @media (max-width: 900px){ .examples{ grid-template-columns: 1fr; } }
@@ -768,7 +784,7 @@
       </a>
       <a class="work-card" href="https://gatagadgets.store" target="_blank" rel="noopener">
         <div class="row">
-          <span class="tag">E-commerce System</span>
+          <span class="tag">Retail Management Platform</span>
           <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Gata Gadgets</h3>
@@ -822,6 +838,29 @@
         <h3>Prayer Movement International</h3>
         <p class="url">prayermovementinternational.org</p>
       </a>
+    </div>
+
+    <div class="case-study">
+      <div class="case-study-head">
+        <div>
+          <span class="tag">Featured project</span>
+          <h3>Gata Gadgets</h3>
+        </div>
+        <a class="visit" href="https://gatagadgets.store" target="_blank" rel="noopener">
+          Visit gatagadgets.store
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <p class="desc">GATA GADGETS is a custom retail management platform built for a Zimbabwe-based electronics store, covering the full day-to-day operation in one system: point-of-sale receipts with split payments across cash, bank transfer, Ecocash, and courier credit; real-time inventory with low-stock alerts; a customer loyalty program; staff clock-in, commission, and leave tracking; and downloadable PDF quotations and invoices. Installable as a progressive web app and hosted on a lightweight cloud server, it gives the business owner live sales, profit, and cash-flow visibility from any device.</p>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Point-of-sale receipts with split/multiple payment methods</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Real-time inventory with low-stock alerts</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Customer loyalty program</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Staff management: clock-in, commission, leave, attendance</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Daily/weekly/monthly profit &amp; loss reporting</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Downloadable PDF quotations and invoices</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Installable as a mobile/desktop app (PWA)</li>
+      </ul>
     </div>
   </section>
 
