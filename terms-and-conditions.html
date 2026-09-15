@@ -7,68 +7,90 @@
 <meta name="description" content="Terms and conditions for products and services sold by Kuvaka Tech Pvt Ltd." />
 <link rel="icon" href="logo-icon.png" type="image/png" />
 <link rel="apple-touch-icon" href="logo-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink: #17122A; --ink-soft: #5A4F80; --paper: #FFFFFF; --mist: #F6F3FC; --line: #E3DAF5;
-    --violet-600: #6D28D9; --violet-500: #8C5CF5; --violet-100: #EDE5FC;
-    --deep-1: #2A0B5E; --deep-2: #4C1D95;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --ink: #F2EEFA; --ink-soft: #C3B6E6; --paper: #140F26; --mist: #1C1638; --line: #382C5F;
-      --violet-600: #8B5CF6; --violet-500: #7C4DEE; --violet-100: #241B44;
-    }
+    --ink: #F3F6FB;
+    --ink-soft: #AEBBD1;
+    --paper: rgba(255,255,255,0.045);
+    --mist: rgba(255,255,255,0.08);
+    --line: rgba(255,255,255,0.14);
+    --teal-700: #bfdbfe;
+    --teal-600: #60a5fa;
+    --teal-500: #3b82f6;
   }
   *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
   body{
-    margin: 0; background: var(--paper); color: var(--ink);
-    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg,#0b1730 0%,#14285a 55%,#1e3a8a 100%);
+    color: var(--ink);
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap{ max-width: 760px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 40px); }
-  header{ padding: 22px 0; border-bottom: 1px solid var(--line); margin-bottom: clamp(36px, 6vw, 56px); }
+  img, svg{ display:block; max-width: 100%; }
+  a{ color: var(--teal-600); }
+  #bg-canvas-wrap{ position: fixed; inset: 0; z-index: -1; overflow: hidden; }
+  #bg-canvas{ display: block; width: 100%; height: 100%; }
+
+  .wrap{ max-width: 760px; margin: 0 auto; padding: 0 clamp(24px, 6vw, 40px); }
+  header{
+    padding: 18px 0; border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(11,23,48,0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    margin-bottom: clamp(36px, 6vw, 56px);
+  }
   .header-row{ display:flex; align-items:center; justify-content:space-between; gap: 16px; }
   .logo{ display:flex; align-items:center; gap: 12px; text-decoration:none; color: inherit; }
   .logo-mark{
-    width: 38px; height: 38px; border-radius: 10px;
-    overflow: hidden; background: #050107; flex-shrink:0;
+    width: 40px; height: 40px; border-radius: 10px; overflow: hidden;
+    background: rgba(255,255,255,0.06); border: 1px solid var(--line); flex-shrink:0;
   }
   .logo-mark img{ width: 100%; height: 100%; object-fit: cover; display:block; }
-  .logo-text strong{ display:block; font-size: 1rem; }
-  .logo-text span{ display:block; font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
-  .back{ font-size: 0.85rem; color: var(--violet-600); text-decoration: none; font-weight: 600; }
+  .logo-text strong{ display:block; font-size: 1rem; font-weight: 800; }
+  .logo-text span{ display:block; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .back{ font-size: 0.85rem; color: var(--teal-600); text-decoration: none; font-weight: 700; }
   .back:hover{ text-decoration: underline; }
 
   main{ padding-bottom: clamp(48px, 8vw, 80px); }
-  .eyebrow{ font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet-600); margin: 0; }
-  h1{ font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif; font-weight: 900; font-size: clamp(2rem, 4.5vw, 2.6rem); margin: 10px 0 6px; letter-spacing: -0.01em; text-wrap: balance; }
+  .eyebrow{ font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal-600); margin: 0; }
+  h1{
+    font-family: 'Geist', "Helvetica Neue", Arial, sans-serif; font-weight: 800;
+    font-size: clamp(2rem, 4.5vw, 2.6rem); margin: 10px 0 6px; letter-spacing: -0.025em; text-wrap: balance;
+  }
   .updated{ color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 clamp(32px, 5vw, 48px); }
-  h2{ font-size: 1.2rem; margin: 2.2em 0 0.6em; letter-spacing: -0.01em; }
+  h2{ font-family: 'Geist', sans-serif; font-weight: 800; font-size: 1.2rem; margin: 2.2em 0 0.6em; letter-spacing: -0.02em; color: var(--ink); }
   h2:first-of-type{ margin-top: 0; }
   p{ margin: 0 0 1em; color: var(--ink-soft); max-width: 68ch; }
   ul{ margin: 0 0 1em; padding-left: 1.2em; color: var(--ink-soft); }
   li{ margin-bottom: 0.4em; max-width: 64ch; }
   strong{ color: var(--ink); }
-  a{ color: var(--violet-600); }
   .note{
-    background: var(--violet-100); border: 1px solid var(--line); border-radius: 14px;
+    background: rgba(96,165,250,0.1); border: 1px solid rgba(96,165,250,0.3); border-radius: 14px;
     padding: 14px 18px; font-size: 0.9rem; color: var(--ink-soft); margin: 0 0 1.2em;
   }
   .note strong{ color: var(--ink); }
   .contact-box{
-    background: var(--mist); border: 1px solid var(--line); border-radius: 16px;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
     padding: 20px 24px; margin-top: 2em;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
   }
   .contact-box p{ margin: 0.2em 0; }
 
   footer{ text-align:center; padding: 22px 0 40px; font-size: 0.78rem; letter-spacing: 0.06em; color: var(--ink-soft); border-top: 1px solid var(--line); }
   footer strong{ color: var(--ink); }
+  footer .copyright{ margin: 14px 0 0; font-size: 0.72rem; letter-spacing: 0.04em; color: var(--ink-soft); opacity: 0.75; }
   .footer-links{ display:flex; justify-content:center; gap: 18px; margin-top: 10px; }
   .footer-links a{ color: var(--ink-soft); text-decoration: none; }
-  .footer-links a:hover{ color: var(--violet-600); text-decoration: underline; }
+  .footer-links a:hover{ color: var(--teal-600); text-decoration: underline; }
 </style>
 </head>
 <body>
+
+<div id="bg-canvas-wrap" aria-hidden="true"><canvas id="bg-canvas"></canvas></div>
 
 <header>
   <div class="wrap header-row">
@@ -139,7 +161,97 @@
     <a href="index.html">Home</a>
     <a href="privacy-policy.html">Privacy Policy</a>
   </div>
+  <p class="copyright">&copy; 2026 Kuvaka Tech Pvt Ltd. All rights reserved.</p>
 </footer>
+
+<script>
+(function(){
+  var canvas = document.getElementById('bg-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var w, h, dpr, particles, raf;
+
+  function resize(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = window.innerWidth;
+    h = window.innerHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function makeParticles(){
+    var count = Math.round((w * h) / 22000);
+    count = Math.max(28, Math.min(count, 90));
+    particles = [];
+    for (var i = 0; i < count; i++){
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.25,
+        vy: (Math.random() - 0.5) * 0.25,
+        r: Math.random() * 1.4 + 0.6
+      });
+    }
+  }
+
+  function step(){
+    ctx.clearRect(0, 0, w, h);
+    var linkDist = 130;
+
+    for (var i = 0; i < particles.length; i++){
+      var p = particles[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+    }
+
+    for (var i = 0; i < particles.length; i++){
+      for (var j = i + 1; j < particles.length; j++){
+        var a = particles[i], b = particles[j];
+        var dx = a.x - b.x, dy = a.y - b.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < linkDist){
+          ctx.strokeStyle = 'rgba(147,197,253,' + (0.16 * (1 - dist / linkDist)) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    for (var i = 0; i < particles.length; i++){
+      var p = particles[i];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(191,219,254,0.55)';
+      ctx.fill();
+    }
+
+    raf = requestAnimationFrame(step);
+  }
+
+  function start(){
+    resize();
+    makeParticles();
+    if (raf) cancelAnimationFrame(raf);
+    if (reduceMotion){
+      step();
+      cancelAnimationFrame(raf);
+    } else {
+      step();
+    }
+  }
+
+  window.addEventListener('resize', start);
+  start();
+})();
+</script>
 
 </body>
 </html>
