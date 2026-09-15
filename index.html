@@ -358,6 +358,24 @@
   .trust-item h3{ font-size: 0.92rem; text-transform: none; letter-spacing: 0; margin-bottom: 2px; font-family: inherit; font-weight: 800; }
   .trust-item p{ margin: 0; color: var(--ink-soft); font-size: 0.88rem; }
 
+  /* ---------- our work (real projects) ---------- */
+  .work-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: clamp(56px,8vw,96px); }
+  @media (max-width: 980px){ .work-grid{ grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px){ .work-grid{ grid-template-columns: 1fr; } }
+  .work-card{
+    background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+    padding: 20px 18px; text-decoration:none; color: var(--ink);
+    display:flex; flex-direction:column; gap: 8px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  @media (hover:hover){ .work-card:hover{ border-color: var(--teal-500); transform: translateY(-3px); } }
+  .work-card .row{ display:flex; align-items:center; justify-content:space-between; gap: 10px; }
+  .work-card .tag{ font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; color: var(--teal-600); text-transform: uppercase; }
+  .work-card .ext{ color: var(--ink-soft); flex-shrink:0; transition: transform 0.2s ease, color 0.2s ease; }
+  @media (hover:hover){ .work-card:hover .ext{ transform: translate(2px,-2px); color: var(--teal-600); } }
+  .work-card h3{ font-size: 0.98rem; font-family: inherit; font-weight: 800; margin: 0; }
+  .work-card .url{ margin:0; font-size: 0.8rem; color: var(--ink-soft); word-break: break-all; }
+
   /* ---------- what we can build (illustrative examples) ---------- */
   .examples{ display:grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-bottom: clamp(56px,8vw,96px); }
   @media (max-width: 900px){ .examples{ grid-template-columns: 1fr; } }
@@ -428,6 +446,7 @@
       <li><a href="#software">Software</a></li>
       <li><a href="#ai">AI &amp; Automation</a></li>
       <li><a href="#smart">Smart Tech</a></li>
+      <li><a href="#work">Our Work</a></li>
     </ul>
     <div class="header-actions">
       <a class="btn btn-primary btn-sm" href="https://wa.me/263782577487" target="_blank" rel="noopener">Talk to Kuvaka</a>
@@ -740,6 +759,80 @@
       <div class="menu-row"><div><p class="title">Smart home setup</p><p class="desc">Smart lighting, plugs and voice control across your home.</p></div><div class="price">From $100</div></div>
       <div class="menu-row"><div><p class="title">Solar-powered internet</p><p class="desc">Router and network setups that stay online through load-shedding.</p></div><div class="price">From $200</div></div>
       <div class="menu-row"><div><p class="title">GPS &amp; fleet tracking</p><p class="desc">Vehicle or equipment tracking for farms and delivery businesses.</p></div><div class="price">Quote on request</div></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="work">
+    <div class="section-head">
+      <p class="eyebrow">Our work</p>
+      <h2>Projects &amp; platforms we've built</h2>
+      <p class="lede">A selection of applications, stores and websites built and maintained by Kuvaka Tech.</p>
+    </div>
+    <div class="work-grid">
+      <a class="work-card" href="https://www.pekugara.com" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Web Application</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Pekugara</h3>
+        <p class="url">pekugara.com</p>
+      </a>
+      <a class="work-card" href="https://gatagadgets.store" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">E-commerce System</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Gata Gadgets</h3>
+        <p class="url">gatagadgets.store</p>
+      </a>
+      <a class="work-card" href="https://globalwebsitesolutions.com" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Website</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Global Website Solutions</h3>
+        <p class="url">globalwebsitesolutions.com</p>
+      </a>
+      <a class="work-card" href="https://wellstardrilling.com" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Website</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Wellstar Drilling</h3>
+        <p class="url">wellstardrilling.com</p>
+      </a>
+      <a class="work-card" href="https://absoluteeneergy.com" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Website</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Absolute Energy</h3>
+        <p class="url">absoluteeneergy.com</p>
+      </a>
+      <a class="work-card" href="https://daystareneergy.com" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Website</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Daystar Energy</h3>
+        <p class="url">daystareneergy.com</p>
+      </a>
+      <a class="work-card" href="https://moneysaverappliances.com" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Website</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Money Saver Appliances</h3>
+        <p class="url">moneysaverappliances.com</p>
+      </a>
+      <a class="work-card" href="https://prayermovementinternational.org" target="_blank" rel="noopener">
+        <div class="row">
+          <span class="tag">Website</span>
+          <svg class="ext" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Prayer Movement International</h3>
+        <p class="url">prayermovementinternational.org</p>
+      </a>
     </div>
   </section>
 
